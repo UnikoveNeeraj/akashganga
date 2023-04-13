@@ -1,0 +1,38 @@
+const ApiEndPoint = {
+  AakashGanga: "/AakashGanga",
+  Registration: "/Registration",
+  VerifyUser:'/verifyUser',
+  UserLogin: "/userLogin",
+  Social: "/socialLogin",
+  ForgotPassword: "/forgotPassword",
+  ResetPassword: "/resetPassword",
+  GetUserById: "/getUserById",
+  GetPercentage: "/getPercentage",
+  Profile_setup: "/profile_setup",
+  GetArticleByUserId: "/getArticleByUserId",
+  Profile_update: "/profile_update",
+  Verifyotp:"/verify_otp",
+  ChangePassword:"/changePassword",
+  GetAllMasterData:'/getAllMasterData',
+  GetSpecialtiozation:'/getSpecialtiozation',
+  SaveArticle:'/saveArticle',
+  GetArticleByUserId:'/getArticleByUserId',
+  GetArticleById:'/getArticleById',
+  UpdateArticle:'/updateArticle',
+  ResendOtpForVerification:'/resendOtpForVerification',
+  VerifyUrl:'/verifyUrl',
+  RemoveProfilePicture:'/removeProfilePicture',
+  SubmitFeedback: '/submitFeedback',
+  UPDATEMOBILE: '/changePhoneNumber',
+  UPDATEMOBILEOTPVERIFY: '/verifyPhoneNumber',
+  ADD_SPECIALIZATION: '/addOtherSpecialization',
+  UPDATEPROFILEPASSWORD: '/changePassword',
+  UploadMedia: '/uploadMedia',
+  ARTICLE_UPLOAD: '/getSimilarityCheckId',
+  DOWNLOAD_SIMILARITY_REPORT: '/downloadSimiliratyReport',
+  START_SIMILARITY: '/similiratyCkeckReportWithAllProcess',
+  SUBSCRIBE: '/countMeIn'
+};
+
+Object.freeze(ApiEndPoint);
+export default ApiEndPoint;

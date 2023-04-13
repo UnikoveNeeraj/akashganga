@@ -1,0 +1,153 @@
+.modal-content {
+    background-color: $light;
+    box-shadow: 0 0 40px rgba($dark, 0.09);
+    border-radius: 20px;
+    border: none;
+}
+
+.modal-header {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    border-bottom: none;
+
+    & .link-back {
+        position: absolute;
+        left: 25px;
+        top: 18px;
+    }
+
+    & p {
+        font-weight: 400;
+        font-size: 14px;
+        color: $dark-400;
+    }
+
+    & .btn-close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        padding: 0;
+        font-size: 14px;
+
+        &:hover,
+        &:active {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.btn-skip {
+
+    padding: 0;
+    font-size: 18px;
+    color: $dark-900;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:hover,
+    &:active {
+        outline: none;
+        box-shadow: none;
+        color: $primary;
+    }
+}
+
+.smallSubText {
+    font-size: 14px;
+    font-weight: 400;
+    color: $primary;
+    font-style: italic;
+    display: block;
+}
+
+.bigSubText {
+    font-weight: 600 !important;
+    color: $dark !important;
+    font-size: 16px !important;
+}
+
+.modal-title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $dark;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0 25px;
+
+    &.bigText {
+        font-size: 160% !important;
+    }
+
+}
+
+.smallSubText+.modal-title {
+    margin-top: 8px !important;
+}
+
+.modal-body {
+    // padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    & .btn-skip {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: none;
+    position: relative;
+
+    & .btn-skip {
+        position: absolute;
+        right: 18px;
+        margin: 0;
+        bottom: 25px;
+    }
+}
+
+.modal-dialog {
+    max-width: 460px;
+}
+
+.modal-sm {
+    max-width: 375px;
+}
+
+.modal-lg {
+    max-width: 800px;
+}
+
+.modal-xl {
+    max-width: 80%;
+}
+
+.link-back {
+    color: $primary;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .85;
+        color: $primary !important;
+    }
+
+    & b {
+        font-size: 100%;
+        margin-right: 5px;
+        font-weight: bold;
+        margin-bottom: -2px;
+    }
+}

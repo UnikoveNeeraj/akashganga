@@ -1,0 +1,105 @@
+@import "../../../styles/typography.scss";
+@import "../../../styles/variables.scss";
+
+.preview-profile {
+    padding-top: 125px;
+    .grey-input{
+        padding: 11px 12px 11px 12px !important;
+    }
+    background-color: #ffffff;
+    .view-profile {
+        background-color: $primary-light;
+        padding: 21px 0px;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        margin-top: 37px;
+
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 113.1%;
+            font-family: 'Open Sans';
+        }
+    }
+
+    h1 {
+        @extend .successHeading;
+        color: $primary-color;
+        font-weight: 700 !important;
+    }
+
+    .profile-upload {
+        img {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+        }
+
+        i {
+            max-width: 95px;
+            max-height: 95px;
+            border-radius: 50%;
+            min-width: 95px;
+            min-height: 95px;
+            background-color: $secondary-color;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+    }
+
+    .badge-view {
+        background-color: $primary-light;
+        padding: 3px 6px;
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        border-radius: 5px;
+        position: relative;
+        color: $primary-color;
+    }
+
+    .profile-box {
+        width: 86%;
+        box-shadow: 0px 0px 18px rgb(0 0 0 / 7%);
+        padding: 20px 22px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .py-2 {
+        padding: 0 !important;
+    }
+
+    .custom_button {
+        padding: 11px 22px !important;
+    }
+
+    .custom_input {
+        background-color: #F4F6FB;
+        border-radius: 10px;
+        pointer-events: none;
+
+        input::placeholder {
+            color: $primary-color;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    label {
+        margin-bottom: 6px;
+    }
+
+    .preview-margin {
+        margin-bottom: 10px;
+    }
+}

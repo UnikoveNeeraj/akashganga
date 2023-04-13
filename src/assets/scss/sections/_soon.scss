@@ -1,0 +1,236 @@
+@import "../base/themecomponents/_variables.scss";
+
+.soonSection {
+    background: #F7F9FD url(../../img/bg/soon.png) no-repeat left 80%;
+    background-size: cover;
+
+    @media #{$desktop} {
+        background: #F7F9FD url(../../img/bg/soon.png) no-repeat center 0;
+        background-size: auto;
+    }
+}
+
+.cmyMessage {
+    position: relative;
+    max-width: 480px;
+    background-color: rgba($light, .5);
+    border: 1px solid #BF1E2E;
+    border-radius: 20px;
+    padding: 0;
+
+
+    @media #{$desktop} {
+        margin-left: 60px;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #BF1E2E;
+    }
+
+    &:after {
+        left: 15px;
+        top: 15px;
+    }
+
+    &:before {
+        right: 15px;
+        top: 15px;
+    }
+}
+
+.messageWrap {
+    padding: 15px 30px;
+    height: 100%;
+    position: relative;
+
+    @media #{$desktop} {
+        padding: 15px 40px;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #BF1E2E;
+    }
+
+    &:after {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    &:before {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        & .imgLigo {
+            max-width: 175px;
+            width: 100%;
+            display: inline-block;
+            & img {
+                width: 100%;
+                max-height: none;
+            }
+        }
+
+        & img {
+            max-height: 55px;
+        }
+    }
+
+    & p {
+        font-size: 16px;
+        color: $dark;
+        padding-bottom: 20px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+.soonContent {
+    max-width: 530px;
+    padding: 20px 20px;
+
+    @media #{$desktop} {
+        padding: 16px 0;
+    }
+
+    & h1 {
+        font-size: 22px;
+        font-weight: 700;
+        color: $secondary;
+        margin-bottom: 10px;
+
+        @media #{$desktop} {
+            font-size: 30px;
+        }
+    }
+
+    & p {
+        color: $primary;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media #{$desktop} {
+            font-size: 20px;
+        }
+    }
+
+    & ul {
+        max-width: 420px;
+
+        & li {
+            margin-top: 25px;
+            list-style: none;
+
+            &:first-child {
+                & .linkBox {
+                    border-color: #FFB01B;
+                }
+            }
+
+            &:nth-child(2) {
+                & .linkBox {
+                    border-color: #FEE119;
+                }
+            }
+
+            &:nth-child(3) {
+                & .linkBox {
+                    border-color: #A4DBF0;
+                }
+            }
+
+            &:nth-child(4) {
+                & .linkBox {
+                    border-color: #FFB8BE;
+                }
+            }
+        }
+    }
+
+    & .linkBox {
+        background-color: $light;
+        border: 1px solid #FEE119;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+
+        &-img {
+            max-width: 22px;
+        }
+
+        &-info {
+            padding: 0 15px;
+            position: relative;
+            max-width: calc(100% - 22px);
+            width: 100%;
+
+            & p {
+                color: $dark-400;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+
+                @media #{$desktop} {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+
+            & span {
+                font-size: 14px;
+                font-weight: 600;
+                color: $secondary;
+                cursor: pointer;
+
+                @media #{$desktop} {
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            }
+
+            & a {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                text-decoration: none;
+                color: $secondary;
+                font-size: 20px;
+                cursor: pointer;
+
+                @media #{$desktop} {
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    color: $secondary !important;
+                    opacity: .85;
+                }
+
+                & b {
+                    transform: rotate(180deg);
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

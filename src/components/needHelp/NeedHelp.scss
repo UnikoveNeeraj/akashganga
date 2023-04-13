@@ -1,0 +1,18 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+
+.need-section {
+    background-color: $section-light;
+
+    h2 {
+        @extend .headingFont;
+    }
+
+    p {
+        @extend .txtRegular;
+    }
+
+    button {
+        padding: 6px 22px;
+    }
+}

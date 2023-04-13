@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.otp_input-box {
+    input {
+        margin-left: 20px;
+    }
+
+    input:first-of-type {
+        margin-left: 0 !important;
+    }
+
+}
+
+.timer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $primary-color;
+}

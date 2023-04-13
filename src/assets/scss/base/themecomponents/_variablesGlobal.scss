@@ -1,0 +1,63 @@
+/** FONT FAMILY **/
+$familyDefault: 'Inter';
+$familySecondary:'Open Sans';
+$fallbackfont: sans-serif;
+
+/** MEDIA BREAKPOINT **/
+$desktop-1k: "(min-width: 1920px)";
+$desktop-xxl: "(min-width: 1440px)";
+$desktop-xl: "(min-width: 1366px)";
+$desktop-lg: "(min-width: 1200px)";
+$desktop: "(min-width: 992px)";
+$tablet: "(min-width: 768px)";
+//$mobile: "(min-width: 576px)";
+$mobile-only: "(max-width: 767px)";
+
+/** COLOR **/
+$dark: #000;
+$dark-100: #111;
+$dark-200: #222;
+$dark-300: #333;
+$dark-400: #444;
+$dark-500: #555;
+$dark-600: #666;
+$dark-700: #777;
+$dark-800: #888;
+$dark-900: #999;
+$dark-ad: #aaa;
+$dark-bb: #bbb;
+$dark-cc: #ccc;
+$dark-ee: #eee;
+$dark-fa: #fafafa;
+$dark-fc: #fcfcfc;
+$dark-f3: #f3f3f3;
+$dark-f5: #f5f5f5;
+$dark-f6: #F6F6F6;
+$dark-f7: #F7F7F7;
+$dark-f8: #F8F8F8;
+$dark-f9: #F9F9F9;
+
+$light: #fff;
+
+$blue: #2C3394;
+$blue-light: #33B6F7;
+
+$green: #009B94;
+$green-dark: #00847D;
+
+
+$gray: #A3A3A3;
+$purple: #6e51e9;
+$red: #BE1E2D;
+
+
+$primary: $blue;
+$secondary: $green;
+$success: $green;
+
+/** LEFT NAV WIDTH **/
+$navWidth: 160px;
+
+/** BORDER RADIUS **/
+
+$borderRadius: 12px;

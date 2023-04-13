@@ -1,0 +1,12 @@
+// Core variables and mixins
+@import "themecomponents/_variablesGlobal.scss";
+@import "themecomponents/_mixins.scss";
+
+// Reset Style CSS
+@import "themecomponents/_resetGlobal.scss";
+
+// Core CSS
+/****/
+@import "../components/_formsGlobal.scss";
+@import "../components/_buttonsGlobal.scss";
+@import "../components/_modalGlobal.scss";

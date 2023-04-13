@@ -1,0 +1,145 @@
+ /*.App {
+ /text-align: center;
+}
+
+.teamSection {
+  text-align: left;
+}
+
+.resourceSection h3 {
+  margin-bottom: 0px !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.main-container {
+  padding-top: 109px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.resourceSection .button {
+  padding: 10px 18px !important;
+  font-size: 16px !important;
+  -webkit-box-shadow: 0 0 22px rgb(0 0 0 / 10%) !important;
+  font-weight: 700 !important;
+}
+
+.resourceSection .button-fill {
+  border-radius: 10px !important;
+}
+
+.resourceSection .button-fill,
+.homepage .button {
+  -webkit-box-shadow: 0 0 22px rgb(0 0 0 / 10%) !important;
+  padding: 17px 34px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.App-header {
+  background-color: #d9d9d9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+/*
+label {
+  color: #404040;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: left;
+  display: block;
+  margin-bottom: 3px;
+} */
+
+/* a {
+  color: #009B94 !important;
+  font-weight: 500;
+} */
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  margin: 0;
+}
+
+.loaderContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnStyle{
+  border-radius: 10px;
+  border-style: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.droupdownPart{
+  margin: 10px;
+  background-color: #F6F9FB;
+  border-radius: 10px;
+  color: #167092;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#dropdown-basic{
+  border-style: none;
+  font-weight: bold;
+}
+.superateline{
+  height: 100px;
+}
+.btn{
+  --bs-btn-color: #167092 !important;
+  ;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 0.3fr 6fr;
+  /* background-color: #2196F3; */
+}
+/* .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+} */

@@ -1,0 +1,12 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+
+.video-section {
+    h2 {
+        @extend .headingFont;
+    }
+
+    p {
+        @extend .txtRegular;
+    }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+
+.social-page {
+    .social_row {
+        border: 0.5px solid $secondary-color;
+        border-radius: 10px;
+        line-height: 17px;
+        padding: 8px 28px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+    .social_disabled{
+        background-color: #d0d5d3;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}

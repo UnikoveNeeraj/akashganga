@@ -1,0 +1,823 @@
+.workFlow svg {
+  opacity: 0;
+  width: 100%;
+}
+
+.workFlow .enable {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
+/*****************************************************************************************************/
+.enable {
+
+  @keyframes animate-svg-stroke-49 {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotateY(0);
+
+    }
+  }
+
+  .svg-elem-49 {
+    animation: animate-svg-stroke-49 0.4s ease-in-out .4s both;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes animate-svg-stroke-50 {
+    0% {
+      opacity: 0;
+      transform: rotateY(-90deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotateY(0);
+
+    }
+  }
+
+  .svg-elem-50 {
+    animation: animate-svg-stroke-50 0.4s ease-in-out .8s both;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes animate-svg-stroke-51 {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .svg-elem-51 {
+    animation: animate-svg-stroke-51 0.4s ease-in-out 1.2s both;
+  }
+
+  /****/
+
+  @keyframes animate-svg-stroke-1 {
+    0% {
+      stroke-dashoffset: 22.234384536743164px;
+      stroke-dasharray: 22.234384536743164px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 22.234384536743164px;
+    }
+  }
+
+  .svg-elem-1 {
+    animation: animate-svg-stroke-1 0.4s ease-in-out 1s both;
+  }
+
+
+  @keyframes animate-svg-stroke-4 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-4 {
+    animation: animate-svg-stroke-4 0.4s ease-in-out 1.4s both;
+  }
+
+
+  @keyframes animate-svg-stroke-3 {
+    0% {
+      stroke-dashoffset: 325.62969970703125px;
+      stroke-dasharray: 325.62969970703125px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 325.62969970703125px;
+    }
+  }
+
+  .svg-elem-3 {
+    animation: animate-svg-stroke-3 0.4s ease-in-out 1.8s both;
+  }
+
+
+  @keyframes animate-svg-stroke-2 {
+    0% {
+      stroke-dashoffset: 325.62969970703125px;
+      stroke-dasharray: 325.62969970703125px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 325.62969970703125px;
+    }
+  }
+
+  .svg-elem-2 {
+    animation: animate-svg-stroke-2 0.4s ease-in-out 2.2s both;
+  }
+
+  @keyframes animate-svg-stroke-6 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+
+    }
+  }
+
+  .svg-elem-6 {
+    animation: animate-svg-stroke-6 0.4s ease-in-out 2.6s both;
+  }
+
+  @keyframes animate-svg-stroke-7 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+
+    }
+  }
+
+  .svg-elem-7 {
+    animation: animate-svg-stroke-7 0.4s ease-in-out 2.8s both;
+  }
+
+  @keyframes animate-svg-stroke-8 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-8 {
+    animation: animate-svg-stroke-8 0.4s ease-in-out 3s both;
+  }
+
+
+  @keyframes animate-svg-stroke-5 {
+    0% {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .svg-elem-5 {
+    animation: animate-svg-stroke-5 0.4s ease-in-out 3.4s both;
+  }
+
+  /*********************************/
+
+  @keyframes animate-svg-stroke-11 {
+    0% {
+      stroke-dashoffset: 195px;
+      stroke-dasharray: 195px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 195px;
+    }
+  }
+
+  .svg-elem-11 {
+    animation: animate-svg-stroke-11 0.4s ease-in-out 4s both;
+  }
+
+  @keyframes animate-svg-stroke-13 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+
+    }
+  }
+
+  .svg-elem-13 {
+    animation: animate-svg-stroke-13 0.4s ease-in-out 4.4s both;
+  }
+
+
+  @keyframes animate-svg-stroke-9 {
+    0% {
+      stroke-dashoffset: 325.62969970703125px;
+      stroke-dasharray: 325.62969970703125px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 325.62969970703125px;
+    }
+  }
+
+  .svg-elem-9 {
+    animation: animate-svg-stroke-9 0.4s ease-in-out 4.8s both;
+  }
+
+  @keyframes animate-svg-stroke-10 {
+    0% {
+      stroke-dashoffset: 324.05926513671875px;
+      stroke-dasharray: 324.05926513671875px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 324.05926513671875px;
+    }
+  }
+
+  .svg-elem-10 {
+    animation: animate-svg-stroke-10 0.4s ease-in-out 5.2s both;
+  }
+
+
+  @keyframes animate-svg-stroke-14 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+
+    }
+  }
+
+  .svg-elem-14 {
+    animation: animate-svg-stroke-14 0.4s ease-in-out 5.6s both;
+  }
+
+  @keyframes animate-svg-stroke-15 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+
+    }
+  }
+
+  .svg-elem-15 {
+    animation: animate-svg-stroke-15 0.4s ease-in-out 5.6s both;
+  }
+
+  @keyframes animate-svg-stroke-16 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+
+    }
+  }
+
+  .svg-elem-16 {
+    animation: animate-svg-stroke-16 0.4s ease-in-out 6s both;
+  }
+
+  @keyframes animate-svg-stroke-12 {
+    0% {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+  }
+
+  .svg-elem-12 {
+    animation: animate-svg-stroke-12 0.4s ease-in-out 6.4s both;
+  }
+
+  /*****/
+
+  @keyframes animate-svg-stroke-17 {
+    0% {
+      stroke-dashoffset: 22.234392166137695px;
+      stroke-dasharray: 22.234392166137695px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 22.234392166137695px;
+    }
+  }
+
+  .svg-elem-17 {
+    animation: animate-svg-stroke-17 0.4s ease-in-out 7s both;
+  }
+
+  @keyframes animate-svg-stroke-20 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-20 {
+    animation: animate-svg-stroke-20 0.4s ease-in-out 7.4s both;
+  }
+
+
+  @keyframes animate-svg-stroke-19 {
+    0% {
+      stroke-dashoffset: 325.62969970703125px;
+      stroke-dasharray: 325.62969970703125px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 325.62969970703125px;
+    }
+  }
+
+  .svg-elem-19 {
+    animation: animate-svg-stroke-19 0.4s ease-in-out 7.8s both;
+  }
+
+
+  @keyframes animate-svg-stroke-18 {
+    0% {
+      stroke-dashoffset: 324.05877685546875px;
+      stroke-dasharray: 324.05877685546875px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 324.05877685546875px;
+    }
+  }
+
+  .svg-elem-18 {
+    animation: animate-svg-stroke-18 0.4s ease-in-out 8.2s both;
+  }
+
+
+  @keyframes animate-svg-stroke-22 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-22 {
+    animation: animate-svg-stroke-22 0.4s ease-in-out 8.6s both;
+  }
+
+  @keyframes animate-svg-stroke-23 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-23 {
+    animation: animate-svg-stroke-23 0.4s ease-in-out 8.6s both;
+  }
+
+  @keyframes animate-svg-stroke-24 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-24 {
+    animation: animate-svg-stroke-24 0.4s ease-in-out 9s both;
+  }
+
+
+  @keyframes animate-svg-stroke-21 {
+    0% {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .svg-elem-21 {
+    animation: animate-svg-stroke-21 0.4s ease-in-out 9.4s both;
+  }
+
+  /****/
+  @keyframes animate-svg-stroke-25 {
+    0% {
+      stroke-dashoffset: -27.229639053344727px;
+      stroke-dasharray: 27.229639053344727px;
+
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 27.229639053344727px;
+    }
+  }
+
+  .svg-elem-25 {
+    animation: animate-svg-stroke-25 0.4s ease-in-out 10s both;
+  }
+
+
+  @keyframes animate-svg-stroke-29 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-29 {
+    animation: animate-svg-stroke-29 0.4s ease-in-out 10.4s both;
+  }
+
+
+  @keyframes animate-svg-stroke-27 {
+    0% {
+      stroke-dashoffset: 324.058837890625px;
+      stroke-dasharray: 324.058837890625px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 324.058837890625px;
+    }
+  }
+
+  .svg-elem-27 {
+    animation: animate-svg-stroke-27 0.4s ease-in-out 10.8s both;
+  }
+
+
+  @keyframes animate-svg-stroke-28 {
+    0% {
+      stroke-dashoffset: 324.058837890625px;
+      stroke-dasharray: 324.058837890625px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 324.058837890625px;
+    }
+  }
+
+  .svg-elem-28 {
+    animation: animate-svg-stroke-28 0.4s ease-in-out 11.2s both;
+  }
+
+  @keyframes animate-svg-stroke-30 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-30 {
+    animation: animate-svg-stroke-30 0.4s ease-in-out 11.6s both;
+  }
+
+  @keyframes animate-svg-stroke-31 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-31 {
+    animation: animate-svg-stroke-31 0.4s ease-in-out 11.6s both;
+  }
+
+  @keyframes animate-svg-stroke-32 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-32 {
+    animation: animate-svg-stroke-32 0.4s ease-in-out 12s both;
+  }
+
+  @keyframes animate-svg-stroke-26 {
+    0% {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .svg-elem-26 {
+    animation: animate-svg-stroke-26 0.4s ease-in-out 12.4s both;
+  }
+
+
+  /****/
+  @keyframes animate-svg-stroke-33 {
+    0% {
+      stroke-dashoffset: -187.968994140625px;
+      stroke-dasharray: 187.968994140625px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 187.968994140625px;
+    }
+  }
+
+  .svg-elem-33 {
+    animation: animate-svg-stroke-33 0.4s ease-in-out 13s both;
+  }
+
+
+  @keyframes animate-svg-stroke-36 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-36 {
+    animation: animate-svg-stroke-36 0.4s ease-in-out 13.4s both;
+  }
+
+
+  @keyframes animate-svg-stroke-34 {
+    0% {
+      stroke-dashoffset: 324.05853271484375px;
+      stroke-dasharray: 324.05853271484375px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 324.05853271484375px;
+    }
+  }
+
+  .svg-elem-34 {
+    animation: animate-svg-stroke-34 0.4s ease-in-out 13.8s both;
+  }
+
+  @keyframes animate-svg-stroke-35 {
+    0% {
+      stroke-dashoffset: 324.058349609375px;
+      stroke-dasharray: 324.058349609375px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 324.058349609375px;
+    }
+  }
+
+  .svg-elem-35 {
+    animation: animate-svg-stroke-35 0.4s ease-in-out 14.2s both;
+  }
+
+  @keyframes animate-svg-stroke-38 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-38 {
+    animation: animate-svg-stroke-38 0.4s ease-in-out 14.6s both;
+  }
+
+  @keyframes animate-svg-stroke-39 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-39 {
+    animation: animate-svg-stroke-39 0.4s ease-in-out 14.6s both;
+  }
+
+  @keyframes animate-svg-stroke-40 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-40 {
+    animation: animate-svg-stroke-40 0.4s ease-in-out 15s both;
+  }
+
+  @keyframes animate-svg-stroke-37 {
+    0% {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+  }
+
+  .svg-elem-37 {
+    animation: animate-svg-stroke-37 0.4s ease-in-out 15.4s both;
+  }
+
+  /****/
+  @keyframes animate-svg-stroke-41 {
+    0% {
+      stroke-dashoffset: -18.38013458251953px;
+      stroke-dasharray: 18.38013458251953px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 18.38013458251953px;
+    }
+  }
+
+  .svg-elem-41 {
+    animation: animate-svg-stroke-41 0.4s ease-in-out 16s both;
+  }
+
+  @keyframes animate-svg-stroke-45 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-45 {
+    animation: animate-svg-stroke-45 0.4s ease-in-out 16.4s both;
+  }
+
+  @keyframes animate-svg-stroke-43 {
+    0% {
+      stroke-dashoffset: 325.62969970703125px;
+      stroke-dasharray: 325.62969970703125px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 325.62969970703125px;
+    }
+  }
+
+  .svg-elem-43 {
+    animation: animate-svg-stroke-43 0.4s ease-in-out 16.8s both;
+  }
+
+  @keyframes animate-svg-stroke-44 {
+    0% {
+      stroke-dashoffset: 325.62945556640625px;
+      stroke-dasharray: 325.62945556640625px;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 325.62945556640625px;
+    }
+  }
+
+  .svg-elem-44 {
+    animation: animate-svg-stroke-44 0.4s ease-in-out 17.2s both;
+  }
+
+
+
+  @keyframes animate-svg-stroke-46 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-46 {
+    animation: animate-svg-stroke-46 0.4s ease-in-out 17.6s both;
+  }
+
+  @keyframes animate-svg-stroke-47 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-47 {
+    animation: animate-svg-stroke-47 0.4s ease-in-out 17.6s both;
+  }
+
+  @keyframes animate-svg-stroke-48 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .svg-elem-48 {
+    animation: animate-svg-stroke-48 0.4s ease-in-out 18s both;
+  }
+
+  @keyframes animate-svg-stroke-42 {
+    0% {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .svg-elem-42 {
+    animation: animate-svg-stroke-42 0.4s ease-in-out 18.4s both;
+  }
+
+  /****/
+}

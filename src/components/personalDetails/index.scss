@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+
+.tel-pd {
+  padding: 9px 12px 11px 70px;
+}
+
+.tel-active {
+  position: absolute;
+  left: 29px;
+  top: 35px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: $primary-color;
+  z-index: 1;
+}
+
+.tel-fade {
+  position: absolute;
+  left: 29px;
+  top: 31px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #97979b !important;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.tel-disable {
+  position: absolute;
+  left: 29px;
+  top: 32px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #97979b;
+  z-index: 1;
+}
+
+.verify-link {
+  .input_post {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline !important;
+    color: $secondary-color;
+    position: absolute;
+    right: 10px;
+    top: 10px;    
+  }
+
+  .link-admin {
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 15px;
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.op {
+  .input_post {
+    opacity: 0.5;
+  }
+}
+
+.personaldetails-tooltip {
+  .tooltip-inner {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter";
+    color: #000 !important;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+
+.customer-say {
+    h2 {
+        @extend .subheadingFont;
+    }
+
+    p {
+        @extend .txtRegular;
+    }
+
+    .customer-box {
+        background-color: #f8f8f8;
+        padding: 30px 26px 4px 26px;
+        border-radius: 8px;
+
+        .box-title {
+            color: #a1a1a1;
+            font-size: 0.8rem;
+            font-weight: 400;
+            min-height: 130px;
+        }
+
+        .box-city {
+            @extend .txtTiny;
+        }
+
+        h6 {
+            @extend .sliderTitle;
+        }
+    }
+
+    .carousel-control-prev {
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon {
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        background-size: 68% 68%;
+
+    }
+
+    .carousel-control-next {
+        opacity: 1;
+    }
+
+    .carousel-control-next-icon {
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        background-size: 68% 68%;
+
+    }
+}

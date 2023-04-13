@@ -1,0 +1,114 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+
+.article-section {
+    background-color: #fbfbfb;
+    border-radius: 20px;
+    padding: 5rem 0;
+
+    h2 {
+        @extend .subheadingFont;
+    }
+
+    p {
+        @extend .txtRegular;
+    }
+
+    .article-box {
+        background-color: #efefef;
+        padding: 18px;
+        border-radius: 10px;
+        margin-bottom: 14px;
+
+        .article-date {
+            color: #868383;
+            font-weight: 400;
+        }
+
+        .article-link {
+            @extend .sectionheadingFont;
+            margin-bottom: 6px;
+
+            a {
+                font-weight: 600;
+                color: $secondary-color;
+            }
+        }
+
+        .article-category {
+            background-color: #e5e5e5;
+            padding: 3px 13px;
+            color: #868383;
+            font-weight: 300;
+            border-radius: 15px;
+            margin-right: 12px;
+            @extend .txtTiny;
+        }
+
+        .article-description {
+            color: #868383;
+            font-weight: 300;
+            @extend .txtRegular;
+        }
+
+        .article-subject {
+            background-color: #e5e5e5;
+            padding: 3px 13px;
+            color: #868383;
+            font-weight: 300;
+            border-radius: 15px;
+            margin-right: 12px;
+        }
+
+        .article-share {
+            font-size: 24px;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -30px;
+    }
+
+    .customer-box {
+        background-color: #f8f8f8;
+        padding: 30px 26px 4px 26px;
+        border-radius: 8px;
+
+        .box-title {
+            color: #a1a1a1;
+            font-size: 0.8rem;
+            font-weight: 400;
+            min-height: 130px;
+        }
+
+        .box-city {
+            @extend .txtTiny;
+        }
+
+        h6 {
+            @extend .sliderTitle;
+        }
+    }
+
+    .carousel-control-prev {
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon {
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        background-size: 68% 68%;
+        display: none;
+    }
+
+    .carousel-control-next {
+        opacity: 1;
+    }
+
+    .carousel-control-next-icon {
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        background-size: 68% 68%;
+        display: none;
+    }
+}

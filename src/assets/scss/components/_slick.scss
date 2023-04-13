@@ -1,0 +1,62 @@
+.slick-arrow {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.07);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: $secondary;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: $light;
+    cursor: pointer;
+
+    @media #{$tablet} {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    &.slick-disabled {
+        filter: grayscale(1);
+        opacity: .25;
+        cursor: default;
+    }
+
+    &:hover {
+        opacity: .85;
+    }
+
+    &.slick-prev {
+        left: -9px;
+
+        @media #{$tablet} {
+            left: -17px;
+        }
+    }
+
+    &.slick-next {
+        right: -9px;
+
+        @media #{$tablet} {
+            right: -17px;
+        }
+    }
+}
+
+.slick-slide {
+    transition: all 600ms ease;
+    opacity: 0.15;
+    transform: translateX(15px);
+
+    &.slick-active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}

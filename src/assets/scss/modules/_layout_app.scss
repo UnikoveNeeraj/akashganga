@@ -1,0 +1,418 @@
+body {
+    position: relative;
+}
+
+.containWrap {
+    max-width: 1204px;
+    margin: 0 auto;
+    clear: both;
+    padding: 0 20px;
+}
+
+.centerSection {
+    padding-top: 150px;
+}
+
+.viewLink {
+    font-weight: 700;
+    color: $primary !important;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.minMax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-col {
+        width: 80px;
+        text-align: center;
+
+        & label {
+            font-size: 12px;
+            color: $dark-400;
+        }
+
+        & input {
+            padding: 1px 15px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid rgba($dark-900, .65);
+            font-weight: 600;
+            width: 100%;
+            font-size: 14px;
+
+            &:disabled,
+            &[disabled] {
+                background-color: rgba($dark, .04);
+                border-color: rgba($dark, 0) !important;
+                color: $dark;
+            }
+        }
+    }
+
+    &-dash {
+        padding: 0 10px;
+        padding-top: 22px;
+        font-size: 14px;
+        color: $dark;
+    }
+
+    &-post {
+        padding: 0 5px;
+        padding-top: 22px;
+        font-size: 12px;
+        color: $dark-400;
+    }
+}
+
+
+.simpleTabs {
+    margin-bottom: 10px;
+
+    & ul {
+        display: flex;
+        align-items: flex-end;
+
+        & li {
+            display: flex;
+            list-style: none;
+            padding: 0 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba($dark-900, .1);
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            & a {
+                font-size: 16px;
+                font-weight: 600;
+                color: $primary;
+                text-align: center;
+                text-decoration: none;
+                position: relative;
+
+                &:hover {
+                    opacity: .85;
+                    cursor: pointer;
+                }
+
+
+                &.active {
+                    font-size: 20px;
+                    font-weight: 700;
+
+                    &:hover {
+                        opacity: 1;
+                        cursor: default;
+                    }
+
+                    &:after {
+                        content: "";
+                        width: 34px;
+                        height: 8px;
+                        border-radius: 8px;
+                        background: linear-gradient(270deg, rgba(255, 176, 27, 0.84) -2.89%, rgba(227, 232, 123, 0.84) 100%);
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.emptyBox {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    text-align: center;
+    max-width: 280px;
+    padding: 50px 0;
+
+    &-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: rgba($dark-900, .2);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    &-title {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &-text {
+        font-size: 18px;
+        padding: 20px 0;
+        padding-top: 15px;
+    }
+}
+
+.noArticle {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    text-align: center;
+    max-width: 320px;
+    padding: 50px 0;
+
+    &-icon {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: rgba($secondary, .1);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        color: $secondary;
+    }
+
+    &-text {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    &-subtext {
+        font-size: 14px;
+        opacity: .75;
+    }
+}
+
+.noMessage {
+    border-radius: 16px;
+    background-color: rgba($dark, .02);
+    padding: 50px 40px;
+    color: $dark-400;
+    font-size: 16px;
+    text-align: center;
+}
+
+/** PAGE MSG **/
+.pageMsg {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: $dark;
+    color: $light;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+    font-family: $familySecondary;
+    margin-top: 22px;
+
+    & span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: $primary;
+        margin: 0 4px;
+        margin-top: -2px;
+    }
+}
+
+/** PAGE COVER **/
+.boxCover {
+    padding: 45px 55px;
+    background: $light;
+    box-shadow: 0px 0px 14px rgba($dark, 0.09);
+    border-radius: 20px;
+    margin-top: 10px;
+
+    &.noStyle {
+        background: none;
+        box-shadow: none;
+    }
+
+    & .titleText {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 5px;
+
+        & .uploadLink {
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+
+            & b {
+                margin-right: 5px;
+                vertical-align: middle;
+                margin-top: -2px;
+                display: inline-block;
+            }
+
+            &:hover {
+                color: $primary;
+                opacity: .85;
+            }
+        }
+    }
+
+    & .boxTitle {
+        color: $dark;
+        margin-bottom: 35px;
+
+        & p {
+            font-size: 14px;
+            font-weight: 400;
+            color: $dark-400;
+        }
+    }
+}
+
+.infoMark {
+    width: 16px;
+    height: 16px;
+    background-color: $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-family: $familySecondary, $fallbackfont;
+    vertical-align: middle;
+
+    &:hover {
+        color: $light;
+        opacity: .85;
+    }
+}
+
+/** PAGE SETUP **/
+.pageWrap {
+    padding: 0 !important;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    background-color: $light;
+
+    & .pageLeft {
+        background-color: rgba($primary, .04);
+        border-radius: 0 30px 30px 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 246px;
+        overflow: auto;
+        height: 100%;
+     
+    }
+
+    & .pageRight {
+        width: calc(100% - 246px);
+        // min-height: 1060px;
+        padding: 30px 40px;
+    }
+}
+
+/** PAGE HEADINGS **/
+.pageTitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: $dark-400;
+    line-height: 20px;
+    margin: 0;
+}
+
+.pageHeading {
+    font-size: 20px;
+    font-weight: 700;
+    color: $secondary;
+    line-height: 24px;
+    margin: 0;
+
+}
+
+.labelHeading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF8300; 
+    line-height: 24px;
+    margin: 0;
+    padding: 0 25px;
+    padding-bottom: 36px; 
+
+}
+
+.listTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark-400;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+/****/
+.page {
+    &-100 {
+        display: flex;
+    }
+
+    &-70 {
+        width: 70%;
+        padding-right: 15px;
+    }
+
+    &-30 {
+        width: 30%;
+        padding-left: 15px;
+
+    }
+}
+
+/****/
+.pageAlert {
+    background-color: rgba($secondary, 1);
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: $light;
+
+    & h2 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    & p {
+        font-size: 12px;
+        opacity: .95;
+        font-weight: 300;
+    }
+}

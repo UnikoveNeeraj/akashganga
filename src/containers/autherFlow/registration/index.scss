@@ -1,0 +1,210 @@
+@import "../../../styles/typography.scss";
+
+
+.register-page {
+    background-image: url("../../../svg/body-base.svg");
+    background-color: $body-base_color;
+    min-height: 100vh;
+    height: 100vh;
+    background-size: cover;
+    overflow: auto;
+
+    .logo_container {
+        text-align: center;
+    }
+
+    .country-select {
+        justify-content: center;
+        input[type=radio] {
+            margin-top: 0px;
+        }
+        label {
+            margin-left: 0px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #009B94;
+        }
+
+        label.disable {
+            color: #404040 !important;
+        }
+    }
+    
+    .tel-pd {
+        padding: 9px 12px 11px 70px !important;
+    }
+
+    .tel-active {
+        position: absolute;
+        left: 33px;
+        top: 38.5px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $primary-color;
+        z-index: 1;
+    }
+
+    .tel-disable {
+        position: absolute;
+        left: 33px;
+        top: 40px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: #97979B;
+        z-index: 1;
+    }
+
+
+    .title_with_name {
+        display: flex;
+        align-items: baseline;
+        .reactSelect-container  {
+            .reactSelect__control  {
+                .reactSelect__placeholder  {
+                    font-size: 12px;
+                }
+                .reactSelect__single-value  {
+                    font-weight: 600 !important;
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .title {
+        min-width: 100px;
+    }
+
+    .left-base {
+        background: linear-gradient(180deg, #1D5CAA 0%, #098DAD 51.58%, #019C94 99.95%);
+        border-right: 3px solid rgba(255, 176, 27, 0.8392156863);
+    }
+
+    .frame {
+        padding: 45px 100px 10px 100px;
+        border-radius: 10px;
+        min-height: 80vh;
+        margin-bottom: 20px;
+
+        label {
+            @extend .inputLabel;
+        }
+    }
+
+    .title {
+        @extend .midHeading;
+    }
+
+    .link {
+        @extend .linkFont;
+        font-size: 14px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .w-90 {
+        width: 90%;
+    }
+
+    .label {
+        @extend .tinyFont;
+    }
+
+    .labelColor {
+        @extend .labelColor;
+    }
+
+    .link {
+        @extend .linkFont;
+    }
+
+    .footer-note {
+        @extend .frameNote;
+        text-align: center;
+        white-space: unset;
+    }
+
+    .welcome-title {
+        @extend .welcomeTitle;
+    }
+
+    .shadow-box {
+        background: #F8F9FD;
+        box-shadow: 0px 0px 9px rgb(0 155 148 / 8%);
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 1rem;
+        text-align: left;
+
+        p {
+            @extend .labelColor;
+            font-weight: 600;
+        }
+    }
+
+    .mx-25 {
+        margin: 25px 0;
+    }
+
+    .mt-25-mb-20 {
+        margin: 25px 0 20px 0;
+    }
+
+    .w-85 {
+        width: 85%;
+    }
+
+    .logo_container {
+        text-align: center;
+        img {
+            width: 450.95px !important;
+            margin-left: 0;
+        }
+    }
+    .title {
+        text-align: center;
+    }
+}
+
+
+.tooltip-inner {
+    background-color: #ffffff !important;
+    max-width: max-content !important;
+    color: $primary-color !important;
+    text-align: left !important;
+    border: 1px solid $secondary-color !important;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 6%) !important;
+    padding: 25px !important;
+    margin-top: 9.3px !important;
+  
+    h4 {
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 12px;
+      margin-bottom: 13px;
+    }
+  
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      font-family: 'Open Sans';
+      line-height: 16px;
+      margin-bottom: 14px;
+      color: $color-black;
+    }
+  }
+  
+  .tooltip-arrow::before {
+    background-image: url('../../../svg/before-tooltip-arrow.png') !important;
+    top: -9px !important;
+    display: none;
+  }

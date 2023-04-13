@@ -1,0 +1,182 @@
+.cookieRow {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    @media #{$desktop} {
+        flex-wrap: nowrap;
+    }
+
+    & .cookieLeft {
+        width: 100%;
+
+        @media #{$desktop} {
+            max-width: calc(100% - 270px);
+            padding-right: 25px;
+        }
+    }
+
+    & .cookieRight {
+        width: 100%;
+
+        @media #{$desktop} {
+            max-width: 270px;
+        }
+
+        & .checkOut {
+            margin-top: 20px;
+
+            @media #{$desktop} {
+                margin-top: 50px;
+            }
+        }
+    }
+
+}
+
+.cookieHero {
+    padding-bottom: 22px;
+
+    & h1 {
+        font-size: 30px;
+        color: $primary;
+        font-weight: 600;
+        margin-bottom: 5px;
+
+        @media #{$desktop} {
+            font-size: 40px;
+        }
+    }
+
+    & p {
+        font-size: 14px;
+        color: $dark-400;
+
+        @media #{$desktop} {
+            font-size: 16px;
+        }
+    }
+}
+
+.cookieContent {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba($primary, 0.12);
+    background-color: lighten($primary, 70%);
+    margin-top: 20px;
+
+    &.splContent {
+        background-color: $primary;
+        padding: 10px 20px;
+        margin-top: 0;
+
+        & h2 {
+            font-size: 15px;
+            color: $light;
+            font-weight: 500;
+            margin-bottom: 0;
+
+            @media #{$desktop} {
+                font-size: 16px;
+            }
+        }
+
+        & .customSwitch {
+            filter: grayscale(1) invert(1) contrast(2000%);
+        }
+
+    }
+
+    & h2 {
+        font-size: 16px;
+        color: $dark;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        @media #{$desktop} {
+            font-size: 20px;
+        }
+    }
+
+    & p {
+        font-size: 14px;
+        color: $dark-400;
+        text-align: justify;
+
+        @media #{$desktop} {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+
+}
+
+.checkOut {
+    background: $light;
+    box-shadow: 0px 0px 16px rgba($dark, 0.06);
+    border-radius: 10px;
+
+    & h2 {
+        color: $dark;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 20px 20px;
+        padding-bottom: 0;
+
+        @media #{$desktop} {
+            font-size: 16px;
+        }
+    }
+
+    & .checkBox {
+        padding: 20px 20px;
+        position: relative;
+        text-align: center;
+        border-bottom: 4px solid #FEE119;
+
+        &:last-child {
+            border-bottom-color: #FFB01B;
+        }
+
+        &-img {
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        &-info {
+            text-align: left;
+        }
+
+        & h3 {
+            color: $primary;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 6px;
+            text-align: center;
+
+            @media #{$desktop} {
+                font-size: 16px;
+            }
+        }
+
+        & p {
+            color: $dark-400;
+            font-size: 14px;
+            padding-bottom: 20px;
+            letter-spacing: -.7px;
+            text-align: justify;
+        }
+
+        & a {
+            color: $secondary;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-table;
+            margin: 0 auto;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    }
+}

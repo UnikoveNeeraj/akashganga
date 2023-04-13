@@ -1,0 +1,202 @@
+@import "../../styles/variables.scss";
+
+.ant-collapse-content-box {
+    text-align: left;
+    height: 200px;
+    overflow: auto;
+    position: absolute;
+    background-color: #ffff;
+    left: 0;
+    top: 63px;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+    z-index: 9;
+    color: #404040;
+    font-family: 'Inter';
+    font-weight: 400;
+    width: 100%;
+
+    .ant-collapse-content {
+        border-top: none !important;
+    }
+
+    .ant-collapse-content-active {
+        border: none !important;
+    }
+
+    .search-dropdown {
+        margin-bottom: 12px;
+
+        input {
+            background-color: #F4F6FB;
+            border: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #404040;
+        }
+
+        ::-webkit-input-placeholder {
+            font-size: 14px !important;
+        }
+
+        label {
+            display: none;
+        }
+
+        .input_pre {
+            top: 9px !important;
+        }
+    }
+
+    .ant-menu-title-content {
+        color: #404040;
+        font-weight: 600;
+        font-family: 'Inter';
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 6px;
+        }
+
+        ::-webkit-input-placeholder  {
+            font-size: 14px !important;
+        }
+
+        .ant-menu-item-active {
+            background-color: #BE1E2D;
+        }
+
+        input[type=checkbox]:checked::before {
+            content: url("../../svg/active-check.svg");
+            position: absolute;
+            top: 1px;
+        }
+    }
+
+    .ant-menu-item-selected {
+        background-color: #dbf1f0 !important;
+    }
+
+    .ant-menu-item-selected:active {
+        background-color: #dbf1f0 !important;
+    }
+
+    .ant-menu-item:not(.ant-menu-item-selected):active {
+        background-color: #dbf1f0 !important;
+    }
+
+    .search-result {
+        color: #404040 !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 17px !important;
+    }
+}
+
+
+.ant-menu-item:has(input[type="checkbox"]:checked) {
+    .ant-menu-title-content {
+        color: $secondary-color;
+    }
+}
+
+.ant-collapse:has(input[type="checkbox"]:checked) {
+    .ant-collapse-header {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2C3394 !important;
+        font-family: 'Inter';
+    }
+}
+
+.ant-collapse:has(input[type="checkbox"]:checked) {
+    .ant-collapse-item {
+        padding: 9px 12px 11px 12px !important;
+    }
+}
+
+
+
+.ant-collapse-header[aria-expanded="false"] {
+    .ant-collapse-expand-icon {
+        display: none !important;
+
+        .ant-collapse-arrow {
+            display: none !important;
+        }
+
+        .anticon-right {
+            display: none !important;
+        }
+    }
+}
+
+.ant-collapse-content {
+    border-top: none !important;
+}
+
+.ant-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ant-menu-vertical {
+    display: contents;
+}
+
+.ant-collapse {
+    border: none !important;
+    background-color: transparent;
+}
+
+.ant-collapse-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    border: 0.5px solid #858585 !important;
+    border-bottom: 0.5px solid #858585 !important;
+    border-radius: 10px !important;
+    padding: 8px 12px 8px 12px;
+    background-color: transparent;
+    background-image: url("../../svg/select-arrow.svg");
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    background-repeat: no-repeat;
+}
+
+.ant-collapse-header {
+    color: #404040 !important;
+    padding: 0 !important;
+
+    .ant-collapse-expand-icon {
+        height: auto !important;
+        display: none !important;
+    }
+}
+
+.value-fill {
+    .ant-collapse-header-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2C3394;
+        font-family: 'Inter';
+    }
+}
+
+.col-open{
+    .ant-collapse-content-box{
+        display: block;
+    }
+}
+
+.col-hide{
+    .ant-collapse-content-box{
+        display: none;
+    }
+}

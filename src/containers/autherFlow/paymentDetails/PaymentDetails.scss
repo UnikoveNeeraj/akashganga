@@ -1,0 +1,19 @@
+@import "../../../styles/typography.scss";
+@import "../../../styles/variables.scss";
+
+.payment-details {
+    .grey-row {
+        background-color: #f0f0f0;
+        padding: 4px 15px 12px 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 6px 22px;
+    }
+
+    p{
+        @extend .txtSmall;
+    }
+}

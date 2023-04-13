@@ -1,0 +1,299 @@
+.faqSection {
+    background-image: url(../../img/banner/banner_bg.png);
+    background-position: 50% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    & .containWrap {
+        @media #{$desktop} {
+            padding: 0 90px;
+        }
+    }
+
+    p,
+    li {
+        text-align: left;
+    }
+
+    & .faqWrap {
+
+        & h1 {
+            font-size: 30px;
+            color: $primary;
+            font-weight: 400;
+            letter-spacing: -2px;
+            position: relative;
+            padding-left: 58px;
+            margin-bottom: 10px;
+
+            @media #{$desktop} {
+                font-size: 46px;
+                padding-left: 90px;
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: "";
+                width: 50px;
+                height: 20px;
+                background-image: url('../../img/icons/wave.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 10px;
+
+                @media #{$tablet} {
+                    width: 80px;
+                    height: 28px;
+                    top: 16px;
+                }
+            }
+
+            & span {
+                font-weight: 600;
+                position: relative;
+            }
+        }
+
+        & h2 {
+            font-weight: 700;
+            font-size: 16px;
+            color: $secondary;
+            margin-bottom: 10px;
+
+            @media #{$desktop} {
+                font-size: 22px;
+            }
+        }
+
+        & h2+p {
+            margin-bottom: 20px;
+            text-align: left;
+
+            @media #{$desktop} {
+                margin-bottom: 0;
+                text-align: left;
+            }
+        }
+
+        & p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $dark;
+            text-align: left;
+
+            @media #{$desktop} {
+                font-size: 16px;
+                text-align: right;
+            }
+
+            & a {
+                color: $secondary !important;
+                font-weight: 700;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $secondary !important;
+                    opacity: .85;
+                }
+            }
+        }
+
+        & .button {
+            padding-left: 30px;
+            padding-right: 30px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            letter-spacing: .2px;
+
+            @media #{$desktop} {
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 22px;
+                display: inline-table;
+
+            }
+        }
+
+
+
+    }
+
+    & .simpleTabs {
+        padding-left: 0;
+
+        @media #{$desktop} {
+            padding-left: 20px;
+        }
+    }
+
+    & .searchWrap {
+        position: relative;
+        margin-bottom: 15px;
+
+        @media #{$desktop} {
+            margin-bottom: 0;
+        }
+
+        & input {
+            padding: 9px 16px;
+            border-radius: 10px;
+            border: 1px solid #E5E7F3;
+            font-size: 16px;
+            font-weight: 400;
+            color: $dark;
+            width: 100%;
+            background-color: #E5E7F3;
+            padding-left: 40px;
+            margin-bottom: 0;
+
+            @media #{$desktop} {
+                width: auto;
+                padding: 9px 20px;
+                padding-left: 40px;
+            }
+        }
+
+        & b {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $primary;
+            font-size: 18px;
+        }
+    }
+
+    & .faqList {
+        padding: 20px 0;
+    }
+
+    & .faqBox {
+        padding: 15px 15px;
+        background-color: $light;
+        border: 1px solid $primary;
+        border-radius: 10px;
+        margin-top: 15px;
+
+        @media #{$desktop} {
+            padding: 20px 26px;
+            border-radius: 20px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &-head {
+            position: relative;
+            cursor: pointer;
+
+            & h3 {
+                text-align: left;
+                font-size: 16px;
+                font-weight: 700;
+                color: $primary;
+                margin: 0;
+                padding-right: 45px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                @media #{$desktop} {
+                    font-size: 20px;
+                    padding-right: 55px;
+
+                }
+            }
+
+            & b {
+                position: absolute;
+                right: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                color: $red;
+                font-weight: bold;
+                width: 55px;
+                height: calc(100% + 30px);
+                background-color: $secondary;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media #{$desktop} {
+                    font-size: 42px;
+                    right: -26px;
+                    width: 74px;
+                    height: 65px;
+                    border-radius: 20px;
+
+                }
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    content: '';
+                    background: url(../../img/icons/arrowdown.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 26px;
+                    height: 17px;
+                    @media #{$desktop} {
+                        width: 45px;
+                        height: 27px;
+                    }
+                }
+            }
+        }
+
+        &-body {
+            font-size: 14px;
+            font-weight: 400;
+            color: $dark-400;
+            padding-top: 15px;
+            display: none;
+
+            @media #{$desktop} {
+                font-size: 16px;
+                padding-top: 22px;
+            }
+
+            & p {
+                text-align: left;
+                padding-bottom: 15px;
+                text-align: justify;
+
+                @media #{$desktop} {
+                    padding-bottom: 20px;
+                }
+
+                &:last-child {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        &.active {
+
+            & .faqBox-head {
+                & b {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+                & h3{
+                    overflow: visible;
+                    white-space: initial;
+                }
+            }
+
+            & .faqBox-body {
+                //  display: block;
+            }
+        }
+    }
+}
