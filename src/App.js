@@ -1,36 +1,82 @@
-import { ToastContainer } from 'react-toastify';
-import { PersistGate } from 'redux-persist/integration/react';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { Provider } from 'react-redux';
-import 'react-toastify/dist/ReactToastify.css';
-import CustomRoutes from './routes/index.js';
-import { persistor, store } from './store/store';
-import './App.css';
-import GlobalSpinner from './components/spinner/GlobalSpinner.js';
 
-function App() {
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        refetchOnWindowFocus: false,
-      },
-    },
-  });
+import React, { useState } from "react";
+import {Grammarly,GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react"; 
+import SunRichText from "./SunEditor";
+import './App.css';
+
+
+
+
+const SubmitArticle = ({ }) => {
+
+ 
+  const [editorLength, seteditorLength] = useState([0]);
+  const [editorTitleValue, seteditorTitleValue] = useState([
+    { val: "Introduction" },
+    
+    
+  ]);
+  const [editorContentValue, seteditorContentValue] = useState([
+    { val: "" },
+    
+  ]);
+  
+  function editorContent(content, type, key) {  
+   
+    const data = editorContentValue;
+    
+      data[key].val = content;
+      seteditorContentValue([...data]);
+    
+  }
+  function addMoreEditor() {
+    const data = editorLength;
+   
+    const editorContent = editorContentValue;
+    const editorTitle = editorTitleValue;
+   
+    data.push(editorLength.length);
+    seteditorLength([...data]);
+  
+    editorContent.push({ val: "" });
+    editorTitle.push({ val: "eferwe"+editorLength.length });
+    seteditorTitleValue([...editorTitle]);
+    seteditorContentValue([...editorContent]);
+   
+  }
+
   return (
     <div className="App">
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <QueryClientProvider client={queryClient}>
-            <GlobalSpinner />
-            <ToastContainer
-              theme='light'
-              autoClose={3000} />
-            <CustomRoutes />
-          </QueryClientProvider>
-        </PersistGate>
-      </Provider>
+     
+      <div>
+        <Grammarly clientId={'client_UeEQaQ5bQCDA4FRBgkRv7w'}
+                  config={{
+                    documentDialect: "british",
+                    activation: "immediate"
+                  }}>
+        {editorLength.map((key, index) => (
+        <GrammarlyEditorPlugin >
+                   <SunRichText
+                      name={editorTitleValue[key]?.val}
+                      value={editorContentValue[key]?.val}
+                      handleChange={(content, type) => {
+                        editorContent(content, type, key);
+                      }}
+                      uploadedImg={(imgUrl) => {
+                        
+                      }}
+                    />
+                    </GrammarlyEditorPlugin >
+        ))}
+                    </Grammarly>
+
+
+                    <div className="fieldMore pt-0 pb-0 text-center mb-25">
+                <a onClick={() => addMoreEditor()}>+ Add New Section</a>
+              </div>
+        </div>
     </div>
   );
 }
 
-export default App;
+export default SubmitArticle;
